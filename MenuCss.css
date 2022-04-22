@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.2rem;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoq_6h9Ic2wvGuIgFx-3X4o-Rx1Y_9vsUmw&usqp=CAU'); background-position: center;
+    min-height: 100%;
+  }
+  
+  .grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .titulo {
+    grid-area: titulo;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRql-z8so6cRD4VtRFM-2-7P6oAb6a1GJczug&usqp=CAU'); background-position: center;
+  
+    color: rgb(242, 248, 250);
+    font-size: 300%;
+    font-weight: 200;
+    font-family: cursive;
+  }
+  
+  .desayunos {
+    grid-area: desayunos;
+    background-image: url('https://img.freepik.com/foto-gratis/vista-superior-desayuno-apetitoso_23-2147991202.jpg?size=626&ext=jpg&ga=GA1.2.2068841190.1639353600'); background-position: center;
+    overflow: scroll;
+  }
+  
+  .bebidas {
+    grid-area: bebidas;
+    background-image: url('https://i0.hippopx.com/photos/453/912/1005/alcohol-alcoholic-background-beer-preview.jpg'); background-position: center;
+	overflow: scroll;
+	color: aliceblue;
+  }
+  
+  .comida {
+    grid-area: comida;
+    background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190620/ourmid/pngtree-517-food-festival-grain-cereal-fabric-texture-gray-background-image_146788.jpg'); background-position: center;
+    overflow: scroll;
+
+  }
+  .referencias {
+    grid-area: referencias;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRql-z8so6cRD4VtRFM-2-7P6oAb6a1GJczug&usqp=CAU'); background-position: center;
+   color: aliceblue;
+  }
+  
+  
+  
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "titulo  titulo titulo"  100px
+      "desayunos  comida   bebidas" auto
+      "referencias  referencias referencias"  100px /
+      200px    auto   200px
+  }
+ 
+  @media (max-width: 900px) {
+    .grid-container {
+      display: grid;
+      gap: 10px;
+      grid-template:
+        "titulo"  100px
+        "desayunos"  300px
+        "comida"    300px
+        "bebidas" 300px
+        "referencias"  100px;
+    }
+  }
+  

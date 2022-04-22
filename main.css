@@ -1,0 +1,73 @@
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "Public Sans", sans-serif;
+   
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIoq_6h9Ic2wvGuIgFx-3X4o-Rx1Y_9vsUmw&usqp=CAU'); background-position: center;
+    
+    font-size: 1.2rem;
+    min-height: 100%;
+  }
+  .main img {
+
+    width: 50%;
+    height: auto;
+  
+  }
+  
+  .grid-container > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .titulo {
+    grid-area: titulo;
+    color: rgb(242, 245, 246);
+    font-size: 300%;
+    font-weight: 200;
+    font-family: cursive;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRql-z8so6cRD4VtRFM-2-7P6oAb6a1GJczug&usqp=CAU'); background-position: center;
+  }
+  
+
+  
+  .menu {
+    grid-area: menu;
+    
+  }
+  
+  .main {
+    grid-area: main;
+    
+  }
+  
+  .referencias {
+    grid-area: referencias;
+    color: rgb(242, 245, 246);
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRql-z8so6cRD4VtRFM-2-7P6oAb6a1GJczug&usqp=CAU'); background-position: center;
+  }
+  
+  .grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template:
+      "titulo"  100px
+      
+      "main"    auto
+      "menu" 100px
+      "referencias"  auto;
+  }
+  
+  
+ 
